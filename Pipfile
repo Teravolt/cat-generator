@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+pandas = "*"
+transformers = "*"
+wandb = "*"
+jupyterlab = "*"
+datasets = "*"
+scikit-learn = "*"
+evaluate = "*"
+pillow = "*"
+ipywidgets = "*"
+matplotlib = "*"
+seaborn = "*"
+scikit-learn-extra = "*"
+gradio = "*"
+torch = "*"
+umap-learn = "*"
+torchvision = "*"
+diffusers = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
