@@ -29,14 +29,14 @@ UPSAMPLER = nn.Upsample(
     mode='nearest')
 
 # MODEL_ARTIFACT = './artifacts/cat-dataset-10K-baseline-model:v0'
-MODEL_ARTIFACT = './artifacts/cat-dataset-model-v2:v0'
+MODEL_ARTIFACT = './artifacts/cat-dataset-model-v2:v1'
 
 if not os.path.exists(MODEL_ARTIFACT):
     run = wandb.init()
     # artifact = run.use_artifact('pkthunder/Cat-Generator/cat-dataset-10K-baseline-model:v0', type='model')
     # artifact = run.use_artifact('pkthunder/Cat-Generator/cat-dataset-baseline-model:v0', type='model')
     # artifact = run.use_artifact('pkthunder/Cat-Generator/cat-dataset-model:v1', type='model')
-    artifact = run.use_artifact('pkthunder/Cat-Generator/cat-dataset-model-v2:v0', type='model')
+    artifact = run.use_artifact('pkthunder/Cat-Generator/cat-dataset-model-v2:v1', type='model')
     artifact_dir = artifact.download()
     run.finish()
 
