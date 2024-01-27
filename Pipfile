@@ -23,6 +23,8 @@ umap-learn = "*"
 torchvision = "*"
 diffusers = "*"
 accelerate = "*"
+sentencepiece = "*"
+tqdm = "*"
 
 [dev-packages]
 
